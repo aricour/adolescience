@@ -1,0 +1,107 @@
+/* Style général de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style des titres */
+h2 {
+  font-size: 1.6rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* Style des sections */
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mises en page image et texte */
+.image-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-text img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.image-text .left, .image-text .right {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.image-text .right {
+  text-align: left;
+}
+
+.image-text .left {
+  text-align: right;
+}
+
+/* Style des puces (points/tirets) */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Design des titres des sections (couleur alternée) */
+.titre1 {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.titre2 {
+  background-color: #bdc3c7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style du lien de retour au début (si nécessaire) */
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.image-text img {
+  max-width: 20px;  /* Limite la largeur à 200px */
+  max-height: 10px; /* Limite la hauteur à 150px */
+  width: auto;       /* Maintient les proportions de l'image */
+  height: auto;      /* Maintient les proportions de l'image */
+  border-radius: 8px; /* Optionnel : arrondir les coins de l'image */
+}

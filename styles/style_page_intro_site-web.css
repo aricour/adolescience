@@ -1,0 +1,530 @@
+body, 
+/* Fond de la page */
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: cadetblue;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* Par défaut, il est caché */
+  
+}
+
+#backToTop:hover {
+  background-color: rgb(253, 198, 58);
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://www.example.com/ton-image-de-fond.jpg'); /* Remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Bandeau noir en haut */
+.top-banner {
+  width: 100%;
+  background-color: #000; /* Couleur noire pour le bandeau */
+  padding: 0px 0; /* Ajoute un peu de padding pour que l'image ait de l'espace */
+  text-align: center; /* Centrer l'image */
+  margin-top: px;
+}
+
+
+.top-banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assure-toi qu'il est au-dessus des autres éléments */
+}
+
+
+.top-banner:hover {
+  transition: transform 0.3s ease;
+}
+
+
+
+.banner-image {
+  width: 50%; /* L'image occupe toute la largeur */
+  height: auto; /* Garde les proportions de l'image */
+}
+
+.hero-content {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Conteneur pour aligner l'image et le texte */
+.banner-content {
+  display: flex;
+  justify-content: space-between; /* Espace entre l'image et le texte */
+  align-items: center; /* Centre verticalement l'image et le texte */
+  max-width: 1200px; /* Limite la largeur du bandeau */
+  margin: 0 auto; /* Centre le bandeau dans la page */
+}
+
+/* L'image dans le bandeau */
+.banner-image {
+  width: 47%; /* L'image occupe 40% de la largeur du bandeau */
+  height: auto; /* Garde les proportions de l'image */
+}
+
+/* Le texte à droite de l'image */
+.banner-text {
+  color: white; /* Texte en blanc */
+  text-align: left; /* Aligne le texte à gauche */
+  width: 75%; /* Le texte occupe 55% de la largeur */
+  padding-left: 0; /* Marge entre l'image et le texte */
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #ff6600; /* Choisis une couleur de ton choix */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* ajout de transition pour un effet plus doux */
+}
+
+
+.cta-button:hover {
+  background-color: #0632c1;
+}
+/* Fond animé avec dégradé et effet parallaxe */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Occupe toute la hauteur de l'écran */
+  background-image: url('https://www.example.com/ton-image.jpg'); /* Remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallaxe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Dégradé en overlay pour contraster le texte */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease-out;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 3s ease-out;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #e55d00;
+}
+
+/* Animation d'apparition du texte */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Ajoute une animation subtile pour le bouton CTA */
+.cta-button:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: typing 3s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+/* Animation de machine à écrire */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Clignotement du curseur de la machine à écrire */
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Ombre subtile */
+}
+.hero:hover {
+  background-size: 110%; /* Légèrement plus grand au survol */
+  transition: background-size 0.5s ease-in-out;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(135deg, cadetblue, cadetblue); /* Dégradé fixe */
+  animation: gradientAnimation 5s infinite alternate; /* Animation du dégradé */
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+  max-width: 80%;
+  transform: scale(0.8);
+  animation: boxReveal 1.5s ease-out forwards;
+}
+
+@keyframes boxReveal {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+.contact-btn {
+  display: inline-block;
+  background-color: #6f4f37; /* Marron ou une couleur personnalisée */
+  color: white; /* Texte en blanc */
+  font-size: 16px; /* Taille du texte */
+  padding: 12px 24px; /* Espacement intérieur du bouton */
+  text-align: center;
+  text-decoration: none; /* Supprimer le soulignement */
+  border-radius: 25px; /* Coins arrondis */
+  transition: all 0.3s ease; /* Transition fluide pour les effets */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+}
+
+/* Effet au survol du bouton */
+.contact-btn:hover {
+  background-color: #4e2f1c; /* Teinte plus foncée au survol */
+  transform: translateY(-5px); /* Légère élévation du bouton */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+.contact-btn:focus, .contact-btn:active {
+  outline: none; /* Supprime l'effet de contour (si présent) */
+  background-color: cadetblue; /* Garde la même couleur en cas de focus */
+}
+.center-container {
+  text-align: center; /* Centre tous les éléments enfants */
+  margin-top: 20px; /* Ajoute un peu d'espace au-dessus */
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px; /* Espace du bas de la page */
+  right: 30px; /* Espace de la droite */
+  background-color: #6f4f37; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  font-size: 18px; /* Taille du texte */
+  padding: 10px 15px; /* Espacement intérieur */
+  border-radius: 50%; /* Forme ronde */
+  text-decoration: none; /* Pas de soulignement */
+  display: none; /* Initialement caché */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+  transition: all 0.3s ease; /* Effet fluide */
+}
+
+.scroll-to-top:hover {
+  background-color: #4e2f1c; /* Plus foncé au survol */
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+
+.branches-science {
+  font-family: Arial, sans-serif;
+  background-color: cadetblue;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.branches-science h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.branches-science .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style des titres */
+.branches-science h2 {
+  font-size: 1.6rem;
+  color: #fbfbfb;
+  margin-bottom: 10px;
+}
+
+/* Style des sections */
+.branches-science section {
+  background-color: #7cf1d8;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mises en page image et texte */
+.branches-science .image-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.branches-science .image-text img {
+  max-width: 100px;  /* Limite la largeur à 100px */
+  max-height: 100px; /* Limite la hauteur à 100px */
+  width: auto;       /* Maintient les proportions de l'image */
+  height: auto;      /* Maintient les proportions de l'image */
+  border-radius: 8px; /* Optionnel : arrondir les coins de l'image */
+}
+
+.branches-science .image-text .left, .branches-science .image-text .right {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.branches-science .image-text .right {
+  text-align: left;
+}
+
+.branches-science .image-text .left {
+  text-align: right;
+}
+
+/* Style des puces (points/tirets) */
+.branches-science ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.branches-science li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.branches-science .titre {
+  background-color: #3c3cf7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style du lien de retour au début (si nécessaire) */
+.branches-science a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.branches-science a:hover {
+  text-decoration: underline;
+}
+
+/* Justification du texte */
+.branches-science p {
+  text-align: justify;
+}
+
+
+.banner-image {
+  max-height: 1200px;
+  max-width: 1200px;
+}
+
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%;
+  }
+  .banner-content {
+    flex-direction: column; /* Empile l'image et le texte sur les petits écrans */
+  }
+  .banner-image {
+    width: 100%; /* L'image occupe 100% de l'espace */
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem; /* Réduit la taille du texte sur les petits écrans */
+  }
+  p {
+    font-size: 1rem; /* Réduit la taille du texte sur les petits écrans */
+  }
+}
+img {
+  max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
+  height: auto;
+}
+
+
+
+
+/* Barre de progression */
+.progress-container {
+  position: fixed;
+  top: 156px; /* Ajuste selon la hauteur de ton bandeau */
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  z-index: 999;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: white; /* Couleur verte */
+  transition: width 0.1s ease-out;
+}
+
+/* Contenu long pour tester le scroll */
+.content {
+  margin-top: 80px; /* Espace pour éviter que le contenu passe sous le bandeau */
+  padding: 20px;
+  height: 2000px; /* Simule une longue page */
+  background: #f4f4f4;
+}
+
+

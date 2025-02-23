@@ -1,0 +1,673 @@
+.bandeau {
+  position: fixed; /* Reste en haut de la page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkblue; /* Fond noir */
+  color: white; /* Texte en blanc */
+  padding: 5px;
+  z-index: 1000; /* Assure que le bandeau est toujours au-dessus du contenu */
+  display: flex; /* Utilisation de Flexbox */
+  align-items: center; /* Aligne verticalement les éléments */
+  justify-content: center; /* Centre horizontalement les éléments à l'intérieur */
+}
+
+/* On place l'image à gauche du texte */
+.bandeau .logo {
+  margin-right: 150px; /* Espace entre l'image et le titre */
+  max-height: 150px; /* Limite la taille de l'image */
+  max-width: 150px; /* Limite la taille de l'image */
+  margin-bottom: 0px;
+}
+/* Le titre reste centré */
+.bandeau h1 {
+  margin: 0;
+  text-align: center;
+  display: inline; /* Evite que le titre occupe toute la largeur */
+  margin-top: 0px;
+}
+
+.bandeau h2 {
+  margin: 0;
+  text-align: center;
+  display: inline; /* Evite que le titre occupe toute la largeur */
+  margin-top: 0px;
+}
+
+
+.bandeau:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+
+
+/* Bandeau noir en haut */
+.top-banner {
+  width: 100%;
+  margin-top: 130px;
+  background-color: #000; /* Couleur noire pour le bandeau */
+  padding: 0px 0; /* Ajoute un peu de padding pour que l'image ait de l'espace */
+  text-align: center; /* Centrer l'image */
+  margin-top: px;
+}
+
+
+.top-banner {
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Assure-toi qu'il est au-dessus des autres éléments */
+  height: 300px;
+}
+
+
+.top-banner:hover {
+  transition: transform 0.3s ease;
+}
+
+
+
+.banner-image {
+  margin-top: 20px;
+  width: 20%; /* L'image occupe toute la largeur */
+  height: auto; /* Garde les proportions de l'image */
+  border: none;
+  background-color: none;
+}
+
+.hero-content {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Conteneur pour aligner l'image et le texte */
+.banner-content {
+  display: flex;
+  justify-content: space-between; /* Espace entre l'image et le texte */
+  align-items: center; /* Centre verticalement l'image et le texte */
+  max-width: 1200px; /* Limite la largeur du bandeau */
+  margin: 0 auto; /* Centre le bandeau dans la page */
+}
+
+/* L'image dans le bandeau */
+.banner-image {
+  width: 40%; /* L'image occupe 40% de la largeur du bandeau */
+  height: auto; /* Garde les proportions de l'image */
+  background-color: transparent;
+}
+
+/* Le texte à droite de l'image */
+.banner-text {
+  color: white; /* Texte en blanc */
+  text-align: left; /* Aligne le texte à gauche */
+  width: 55%; /* Le texte occupe 55% de la largeur */
+  padding-left: 20px; /* Marge entre l'image et le texte */
+}
+
+.banner-text-title {
+  color: white; /* Texte en blanc */
+  text-align: left; /* Aligne le texte à gauche */
+  width: 100%; /* Le texte occupe 55% de la largeur */
+  padding-bottom: 5px; /* Marge entre l'image et le texte */
+  padding-left: 100px;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Style de base pour le body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#contenu {
+  margin-top: 50px;  /* Cela permet d'éviter que le contenu soit caché par le bandeau */
+}
+
+/* Pour le contenu de la page */
+.contenu {
+  padding-top: 80px; /* Décale le contenu sous le bandeau */
+  padding: 20px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ce7005;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* Par défaut, il est caché */
+}
+
+#backToTop:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Resetting some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  background-color: white; /* Ajoute un fond blanc autour de l'image */
+  padding: 10px;  /* Pour ne pas que l'image touche les bords de son conteneur */
+  border-radius: 5px; /* Si tu veux arrondir les coins */
+}
+
+/* Global Styles */
+body {
+  background: linear-gradient(45deg, rgb(80, 177, 174), #3578fc);
+  color: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* General Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+img, video {
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://www.example.com/your-image.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: #ff6f61;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #ff3e32;
+  transform: translateY(-5px);
+}
+
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #d3d3d3;
+}
+
+section img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Cards for images or videos */
+.card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img, .card video {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+
+/* Custom animation for elements */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+section .fade-in {
+  animation-delay: 0.3s;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ff3e32;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+  }
+
+  section {
+      padding: 40px 0;
+  }
+
+  section h2 {
+      font-size: 24px;
+  }
+
+  section p {
+      font-size: 16px;
+  }
+}
+
+
+
+.hero {
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+.hero {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  transition: background-position 0.3s ease;
+}
+
+.hero:hover {
+  background-position: top;
+}
+
+h1 {
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Animation Fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;  /* Taille du titre h1 */
+  color: #fae25b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Ombre autour du texte */
+  margin: 20px 0;
+  animation: fadeIn 1.5s ease-out;
+}
+
+
+.cadre h1 {
+  font-size: 150% !important;  /* Taille augmentée du titre */
+  color: #fae25b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Ombre autour du texte */
+  animation: fadeIn 1.5s ease-out;
+}
+
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #ff6600; /* Choisis une couleur de ton choix */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* ajout de transition pour un effet plus doux */
+}
+
+
+.cta-button:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-button:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
+
+* {
+  margin: 0; /* Réinitialise toutes les marges par défaut */
+  padding: 0; /* Réinitialise toutes les bordures par défaut */
+}
+.gif-hexagon {
+  display: flex; /* Utilisation de Flexbox pour aligner les vidéos côte à côte */
+  justify-content: space-between; /* Espace entre les vidéos */
+  gap: 20px; /* Un petit espace entre les vidéos */
+  align-items: center;
+}
+
+.hexagon {
+  display: flex; /* Utilisation de Flexbox pour aligner les vidéos côte à côte */
+  justify-content: space-between; /* Espace entre les vidéos */
+  gap: 20px; /* Un petit espace entre les vidéos */
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.video {
+  width: 100px; /* Taille fixe pour les vidéos */
+  height: 100px; /* Hauteur égale à la largeur pour un format carré */
+  object-fit: cover; /* S'assure que la vidéo ou le GIF couvre le cadre sans déformation */
+  flex-shrink: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+}
+.parallax {
+  background-image: url('ton-image.jpg');
+  background-attachment: fixed; /* Ce qui crée l'effet parallaxe */
+  background-position: center;
+  background-size: cover;
+  height: 500px; /* Ajuste la hauteur selon ton besoin */
+}
+.image-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-zoom:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #ff6600;
+  transform: scale(1.1);
+}
+nav {
+  position: -webkit-sticky; /* Pour Safari */
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.copyright {
+  position: absolute;
+  right: 0;  /* Aligne le texte à droite de l'image */
+  bottom: 40px;  /* Aligne le texte au bas de l'image */
+  font-size: 12px; /* Taille du texte */
+  color: white; /* Couleur du texte */
+  background-color: transparent; /* Fond transparent */
+  padding: 5px;
+  transform: rotate(90deg); /* Faire pivoter le texte à 90 degrés */
+  transform-origin: bottom right; /* L'axe de rotation est en bas à droite */
+}
+
+.image-container2 {
+  position: relative;
+  display: inline-block;
+}
+
+.copyright2 {
+  font-size: 12px;
+  color: white;
+  background-color: transparent; /* Fond transparent */
+  padding: 0;
+  margin-top: -35px; /* Espacement entre l'image et le copyright */
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-visible {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.section-visible.visible {
+  opacity: 1;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%;
+  }
+  .banner-content {
+    flex-direction: column; /* Empile l'image et le texte sur les petits écrans */
+  }
+  .banner-image {
+    width: 100%; /* L'image occupe 100% de l'espace */
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem; /* Réduit la taille du texte sur les petits écrans */
+  }
+  p {
+    font-size: 1rem; /* Réduit la taille du texte sur les petits écrans */
+  }
+}
+img {
+  max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
+  height: auto;
+}
+
+
+
+

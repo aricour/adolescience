@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <link rel="stylesheet" href="styles/style_page_intro_site-web.css">
+</head>
+<body> 
+<!-- Bouton Retour en haut -->
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑ Retour en haut</a>
+    <button id="backToTop" onclick="scrollToTop()"><img src="https://cdn-icons-png.flaticon.com/512/929/929769.png" width="30" height="30"></button>
+        <script>
+            // Affiche ou cache le bouton en fonction du défilement
+            window.onscroll = function() {
+                var button = document.getElementById("backToTop");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+            // Fonction pour remonter en haut de la page
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+    <div class="top-banner">  
+     <!-- Bandeau noir en haut -->
+    <div class="banner-content">
+        <div class="banner-image">
+        <img src="images/Adolescience.png" alt="Image du bandeau" class="banner-image">
+    </div>
+        <div class="banner-text">
+            <h2>Le magazine des ados sur la science !</h2>
+            <p>C'est un monde fascinant, tu verras, et notre but est de le rendre accessible au plus grand nombre. Alors, bonne découverte !</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Met à jour la largeur de la barre au scroll
+    window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var progress = (scrollTop / scrollHeight) * 100;
+        document.getElementById("progressBar").style.width = progress + "%";
+    };
+</script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>A la une !</h1>
+            <p>Des scientifiques ont découvert quelques propriétés vraiment surprenantes sur les hexagones. Tu veux en savoir plus, viens découvrir !</p>
+            <button class="cta-button"><a href="ma page wiki.html" class="cta-button">Découvrez les hexagones, des polygones fascinants</a></button>
+            <BR><h1>Description du site</h1>
+            <p>Ce site est le site de la science. Consulté par des milliers de personnes chaque jour qui viennent en apprendre plus sur ce monde passionnant. Tous les mois environ paraissent un ou deux articles sur des sujets divers et variés. Forcément un te plaira !</p>
+            <p>N'hésite pas à nous informer des nouvelles scientifiques afin qu'elles paraissent sur notre site.</p>
+        </div>
+    </section>
+    <div class="hero-content">
+        <h1>La science en quelques mots...</h1>
+        <p>Définir la science semble quelque peut impossible... Mais nous allons tâcher d'être les plus précis ! La science est un monde que l'on peut diviser en 8 branches séparées, indépendantes mais intimement liées.</p>
+        </div>
+
+<div class="branches-science">
+    <div class="container">
+        
+        <section>
+          <div class="titre">
+            <h2>La chimie</h2>
+            </div>
+            <div class="image-text left">
+                <img src="https://st2.depositphotos.com/5266903/8825/v/450/depositphotos_88255416-stock-illustration-boiling-liquid-icon.jpg" alt="Chimie">
+                <div class="right">
+                    <p>La chimie s'intéresse à la composition de toutes les substances qui forment notre univers, à leurs propriétés et à leurs transformations. Les chimistes cherchent à mieux comprendre comment notre monde fonctionne.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>La physique</h2>
+            </div>
+            <div class="image-text right">
+                <img src="https://e1.pngegg.com/pngimages/935/53/png-clipart-scientifique-symbole-science-atome-physique-atomsymbol-chimie-ligne-thumbnail.png" alt="Physique">
+                <div class="left">
+                    <p>La physique permet de comprendre le fonctionnement de la nature dans ses retranchements les plus reculés comme l'infiniment grand, l'infiniment petit et l'infiniment complexe. Cette science fondamentale traite des propriétés de la matière qui régissent les phénomènes naturels.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>La géologie et les sciences de la Terre</h2>
+            </div>
+            <div class="image-text left">
+                <img src="https://img.freepik.com/vecteurs-libre/quatre-couches-terre_1308-128264.jpg" alt="Géologie">
+                <div class="right">
+                    <p>La géologie est une science qui consiste à étudier les parties de la Terre et leur composition accessibles à l'observation et à élaborer des hypothèses qui permettent de reconstituer leur histoire et expliquer leur agencement.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>L'astronomie</h2>
+            </div>
+            <div class="image-text right">
+                <img src="https://us.123rf.com/450wm/alekseyvanin/alekseyvanin1705/alekseyvanin170502568/77921585-ic%C3%B4ne-de-la-ligne-astronomie-logo-vectoriel-de-saturn-plan%C3%A8te-contour-pictogramme-lin%C3%A9aire-isol%C3%A9.jpg" alt="Astronomie">
+                <div class="left">
+                    <p>L'astronomie est l'étude de tout ce qui se trouve dans l'univers au-delà de l'atmosphère terrestre afin d'expliquer leurs propriétés physiques et chimiques ainsi que leur origine et leur évolution. Elle prend sa source dans l'observation du ciel.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>Les mathématiques</h2>
+          </div>
+            <div class="image-text left">
+                <img src="https://t3.ftcdn.net/jpg/01/24/88/94/360_F_124889434_xDTG8Kxia35LOxRT7vgFIWcWdpYrNqPA.jpg" alt="Mathématiques">
+                <div class="right">
+                    <p>Les mathématiques sont la science et l'étude de la qualité, de la structure, de l'espace et du changement. Les mathématiciens recherchent des modèles, formulent de nouvelles conjectures et établissent la vérité par déduction rigoureuse à partir d'axiomes et de définitions judicieusement choisis. Ils manipulent les nombres afin de comprendre l'univers et résoudre des problèmes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>La biologie et l'écologie</h2>
+            </div>
+            <div class="image-text right">
+                <img src="https://www.shutterstock.com/image-vector/organic-green-bio-lab-logo-600nw-1913867509.jpg" alt="Biologie et écologie">
+                <div class="left">
+                    <p>La biologie et l'écologie consistent en l'étude des milieux, de la biodiversité et des interactions au sein d'un écosystème. Cela comprend aussi une partie des sciences de la nature et de l'histoire naturelle des êtres vivants.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>La médecine</h2>
+            </div>
+            <div class="image-text left">
+                <img src="https://thumbs.dreamstime.com/b/medical-health-red-heart-care-clinic-people-new-healthy-life-logo-design-icon-white-background-ai-source-file-167479170.jpg" alt="Médecine">
+                <div class="right">
+                    <p>La médecine est science qui a pour objet l'étude, le traitement, la prévention des maladies; autrement dit c'est l'art de mettre, de maintenir ou de rétablir un être vivant dans les meilleures conditions de santé.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="titre">
+            <h2>L'ingénierie et la recherche</h2>
+            </div>
+            <div class="image-text right">
+                <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/5355893-logo-de-l-industrie-de-l-ingenierie-logo-de-mecanicien-vectoriel.jpg" alt="Ingénierie et recherche">
+                <div class="left">
+                    <p>Parce qu'il est le moteur principal de l'innovation, le rôle d'ingénieur consiste à concevoir, coordonner et mettre en œuvre des solutions techniques sous des contraintes de temps, de ressources et de respect des réglementations.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+<div class="center-container">
+    <a href="A propos de nous.html" class="contact-btn">A propos de nous...</a>
+    <a href="mailto:infos-adolescience@googlegroups.com" class="contact-btn">Nous contacter</a>
+    <a href="https://notredame67.com/enseignement-au-lycee/" class="contact-btn">Le lycée Notre-Dame</a>
+</div>
+</body>
+</html>

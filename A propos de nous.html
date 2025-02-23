@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+<meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <link rel="stylesheet" href="styles/style à propos de nous.css">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="top-banner">  
+        <!-- Bandeau noir en haut -->
+       <div class="banner-content">
+           <div class="banner-image">
+           <img src="images/Adolescience.png" alt="Image du bandeau" class="banner-image">
+       </div>
+           <div class="banner-text">
+               <h2>Le magazine des ados sur la science !</h2>
+               <p>C'est un monde fascinant, tu verras, et notre but est de le rendre accessible au plus grand nombre. Alors, bonne découverte !</p>
+           </div>
+       </div>
+   </div>
+<script>
+    // Met à jour la largeur de la barre au scroll
+    window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var progress = (scrollTop / scrollHeight) * 100;
+        document.getElementById("progressBar").style.width = progress + "%";
+    };
+</script>
+
+   <section class="hero">
+    <div class="hero-content">
+        <h1>Qui nous sommes</h1>
+        <p>J'ai eu l'idée de publier ce site internet il y a peu. Et je me suis fait rejoindre par des camarades. Nous avons tous un point commun : nous adorons la science ! Après tout, sans science, pas de vie...</p>
+        <p>Nous sommes donc âgés de 15 ans et étudions à Strasbourg. La science, c'est une vieille passion pour nous, qui aimons calculer, décrire, expliquer et programmer.
+        </p>
+        <BR><h1>Notre lycée...</h1>
+        <p>Nous étudions au lycée Notre-Dame des Mineurs, à Strasbourg. Fondée en 1597 par Pierre Fourrier et Alix Leclerc, les Frères, les Soeurs et les Esnseignants de la Congrégation Notre-Dale n'ont cessé de transmettre leur savoir aux élèves. Originellement pour filles, le lycée accueille aujourd'hui environ 180 élèves par niveau de la Seconde jusqu'à la terminale.</p>
+        <p>N'hésite pas à nous informer des nouvelles scientifiques afin qu'elles paraissent sur notre site.</p>
+        <img src="https://notredame67.com/wp-content/uploads/2021/03/Batiment-E-1024x683.jpg" width="60%" height="60%">
+        <BR><h1>Notre souhait</h1>
+        <p>Passionnés de physique, de chimie, de technique, de mécanique... nous voulons tout vous transmettre !! Nous souhaitons que la science n'ait aucun secret pour vous. C'est pourquoi, nous tâchons de rendre ce monde merveilleux le plus accessible à tous... et nous avons besoin de votre soutien ! Nous avons atteint la quinzaine mais sommes encore limités en terme de moyens pour agir. </p>
+    </div>
+</section>
+    <div class="center-container">
+        <a href="page_intro_site-web.html" class="contact-btn">Accueil Adolescience</a>
+        <a href="mailto:contact@example.com" class="contact-btn">Nous contacter</a>
+        <a href="https://notredame67.com/enseignement-au-lycee/" class="contact-btn">Le lycée Notre-Dame</a>
+    </div>   
+    </body>
+</html>
